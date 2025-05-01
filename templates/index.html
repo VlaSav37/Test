@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='stl.css')}}">
+</head>
+<body>
+    <h1>{{ms}}</h1>
+    <p class="st">Это мой сайт</p>
+    <div style="color:bisque">
+        <h2>Что нужно сделать:</h2>
+            <ul class="abc">
+            {% for i in zgl %}
+                <li>{{i}}</li>
+            {% endfor %}
+            </ul>
+        <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.istockphoto.com%2Fru%2F%25D1%2584%25D0%25BE%25D1%2582%25D0%25BE%25D0%25B3%25D1%2580%25D0%25B0%25D1%2584%25D0%25B8%25D0%25B8%2F%25D1%2580%25D0%25B0%25D0%25B7%25D0%25BD%25D0%25BE%25D1%2586%25D0%25B2%25D0%25B5%25D1%2582%25D0%25BD%25D1%258B%25D0%25B9-%25D1%2584%25D0%25BE%25D0%25BD&psig=AOvVaw3lp959wjQEbeu8Fd5PQC3i&ust=1742573052712000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCLj5ytuEmYwDFQAAAAAdAAAAABAE" alt="Красиво же)">
+    </div>
+    <h2 id="txt">Перейдите на сайт:</h2>
+    <h2><a href="https://edu.rk.gov.ru/journal-app/u.9997" id="stl">Перейти</a></h2>
+</body>
+</html>
